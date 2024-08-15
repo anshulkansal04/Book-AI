@@ -1,0 +1,268 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root{
+  --background-color: #0f172a;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Pricing.css */
+#pricing{
+  background-color: var(--background-color);
+  padding: 1px;
+}
+.pricing-container {
+  background: #1e293b;
+  padding: 35px;
+  border-radius: 15px;
+  color: #f0f0f5;
+  font-family: 'Poppins', sans-serif;
+  max-width: 1030px;
+  margin: 20px auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+
+}
+
+.pricing-title {
+  text-align: initial;
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #a5b4fc;
+}
+
+.pricing-subtitle {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #b0b0c0;
+}
+
+.pricing-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  text-align: center;
+  gap: 20px;
+}
+
+.pricing-card {
+  background: #273f67;
+  border-radius: 15px;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #f0f0f5;
+  position: relative;
+}
+
+
+.pricing-card .model-logo {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 20px;
+}
+
+.pricing-card .model-name {
+  font-size: 1.6em;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.pricing-card .price-label {
+  font-size: 1.1em;
+  font-weight: 400;
+  color: #b0b0c0;
+  margin-top: 10px;
+}
+
+.pricing-card .price {
+  font-size: 2em;
+  color: #ffd700;
+  margin-top: 5px;
+  font-weight: 700;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.pricing-footer {
+  margin-top: 30px;
+  font-size: 1em;
+  color: #a0a0b0;
+}
+
+.pricing-footer p {
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .pricing-title {
+    font-size: 2em;
+  }
+
+  .pricing-subtitle {
+    font-size: 1em;
+  }
+
+  .pricing-card .model-name {
+    font-size: 1.4em;
+  }
+
+  .pricing-card .price-label {
+    font-size: 1em;
+  }
+
+  .pricing-card .price {
+    font-size: 1.5em;
+  }
+
+  .pricing-cards {
+    justify-content: center;
+  }
+
+  .pricing-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-container {
+    padding: 20px;
+  }
+
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-card {
+    width: 80%;
+  }
+
+  .pricing-card .model-logo {
+    width: 36px;
+    height: 36px;
+  }
+
+  .pricing-card .model-name {
+    font-size: 1.2em;
+  }
+
+  .pricing-card .price-label {
+    font-size: 0.9em;
+  }
+
+  .pricing-card .price {
+    font-size: 1.3em;
+  }
+}
+
+/* Subscription.css */
+#subscribe{
+  background-color: var(--background-color);
+  padding: 1px;
+}
+.subscribe-container {
+  background: #1c1c2a;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  color: #f0f0f5;
+}
+
+.subscribe-title {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #a5b4fc;
+}
+
+.subscribe-text {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #b0b0c0;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.subscribe-input {
+  padding: 15px 20px;
+  font-size: 1em;
+  border-radius: 25px;
+  border: 1px solid #a5b4fc;
+  outline: none;
+  color: #333;
+  width: 60%;
+  max-width: 400px;
+}
+
+.subscribe-button {
+  padding: 15px 30px;
+  font-size: 1em;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.subscribe-button:hover {
+  background: linear-gradient(90deg, #5a67d8, #6b46c1);
+}
+
+/* Toastify Custom Styling */
+.Toastify__toast--success {
+  background: #4CAF50;
+}
+
+.Toastify__toast--error {
+  background: #f44336;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .subscribe-container {
+      padding: 20px;
+  }
+
+  .subscribe-title {
+      font-size: 2em;
+  }
+
+  .subscribe-text {
+      font-size: 1em;
+  }
+
+  .subscribe-form {
+      flex-direction: column;
+  }
+
+  .subscribe-input {
+      width: 80%;
+      margin-bottom: 15px;
+  }
+}
