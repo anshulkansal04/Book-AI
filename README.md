@@ -24,6 +24,7 @@ Follow these steps to set up and run the project locally.
 Make sure you have Node.js installed on your machine. Then run the following command to install the necessary packages:
 
 ```
+cd client
 npm install
 ```
 
